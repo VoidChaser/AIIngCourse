@@ -1,9 +1,12 @@
 import openai
 from apikey import OPENAI_API_KEY
 
+
+# Вставьте ваш OpenAI API ключ
+openai.api_key = OPENAI_API_KEY
+
 def get_gpt_response(prompt):
-    client = openai.OpenAI(api_key=OPENAI_API_KEY)  # передаём ключ сюда
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "Ты — помощник студента."},
@@ -13,9 +16,10 @@ def get_gpt_response(prompt):
         n=1,
         temperature=0.7,
     )
-    answer = response.choices[0].message.content.strip()
+    answer = response['choices'][0]['message']['content'].strip()
     return answer
 
+# Тестируем
 if __name__ == "__main__":
     questions = [
         "Что такое машинное обучение?",
