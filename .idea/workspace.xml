@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AI_Ingeneer_Course_Work.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота.">
+      <change afterPath="$PROJECT_DIR$/Token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram_schedule_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_schedule_bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app.executor": "Run",
+    "Python.telegram_schedule_bot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -88,6 +87,15 @@
       <option name="presentableId" value="Default" />
       <updated>1755010256049</updated>
     </task>
+    <task id="LOCAL-00001" summary="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота.">
+      <option name="closed" value="true" />
+      <created>1755011990872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755011990872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота." />
+    <option name="LAST_COMMIT_MESSAGE" value="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота." />
   </component>
 </project>
