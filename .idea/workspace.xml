@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creditionalsthree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickstart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram_schedule_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_schedule_bot.py" afterDir="false" />
     </list>
@@ -36,6 +40,9 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.app.executor": "Run",
+    "Python.gettok.executor": "Run",
+    "Python.quickstart.executor": "Run",
+    "Python.telegram_schedule_bot (1).executor": "Run",
     "Python.telegram_schedule_bot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -43,7 +50,78 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.telegram_schedule_bot (1)">
+    <configuration name="gettok" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gettok.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="quickstart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quickstart.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="telegram_schedule_bot (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/telegram_schedule_bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="telegram_schedule_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
@@ -68,7 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.telegram_schedule_bot (1)" />
         <item itemvalue="Python.telegram_schedule_bot" />
+        <item itemvalue="Python.quickstart" />
+        <item itemvalue="Python.gettok" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755011990872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота.">
+      <option name="closed" value="true" />
+      <created>1755012408252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755012408252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
