@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/creditionalsthree.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickstart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_schedule_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_schedule_bot.py" afterDir="false" />
-    </list>
+    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="Успешно интегрирована модель GPT-3.5.&#10;&#10;    Создана функция для получения ответов на вопросы студентов.&#10;&#10;    Проведено тестирование с примерами.&#10;&#10;Проблемы:&#10;&#10;    Для большого количества запросов необходим контроль использования API (лимиты, стоимость).&#10;&#10;    Ответы GPT могут требовать фильтрации и проверки.&#10;&#10;Рекомендации:&#10;&#10;    Внедрить кэширование часто задаваемых вопросов.&#10;&#10;    Добавить интерфейс для общения студентов с ИИ.&#10;&#10;    Обеспечить мониторинг и логирование запросов." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,11 +31,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.AnaliserSite.executor": "Run",
+    "Python.RandomForestLearnEssay.executor": "Run",
+    "Python.aicourse.executor": "Run",
     "Python.app.executor": "Run",
+    "Python.getmarksofdataset.executor": "Run",
     "Python.gettok.executor": "Run",
     "Python.quickstart.executor": "Run",
     "Python.telegram_schedule_bot (1).executor": "Run",
     "Python.telegram_schedule_bot.executor": "Run",
+    "Python.text_cleanup.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -52,11 +49,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\EssayAnaliser" />
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.telegram_schedule_bot (1)">
-    <configuration name="gettok" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aicourse">
+    <configuration name="AnaliserSite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,11 +64,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EssayAnaliser" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gettok.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EssayAnaliser/AnaliserSite.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="quickstart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RandomForestLearnEssay" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,11 +86,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EssayAnaliser" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quickstart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EssayAnaliser/RandomForestLearnEssay.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="telegram_schedule_bot (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aicourse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,11 +108,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InteractiveAICourse" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/telegram_schedule_bot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InteractiveAICourse/aicourse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getmarksofdataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EssayAnaliser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EssayAnaliser/getmarksofdataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +156,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\telegram_schedule_bot.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot\telegram_schedule_bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text_cleanup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EssayAnaliser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EssayAnaliser/text_cleanup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,10 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.telegram_schedule_bot (1)" />
-        <item itemvalue="Python.telegram_schedule_bot" />
-        <item itemvalue="Python.quickstart" />
-        <item itemvalue="Python.gettok" />
+        <item itemvalue="Python.aicourse" />
+        <item itemvalue="Python.AnaliserSite" />
+        <item itemvalue="Python.RandomForestLearnEssay" />
+        <item itemvalue="Python.getmarksofdataset" />
+        <item itemvalue="Python.text_cleanup" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +228,63 @@
       <option name="project" value="LOCAL" />
       <updated>1755012408252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Итог за день&#10;&#10;Достижения:&#10;&#10;    Интегрирован Google Calendar API в Telegram-бота.&#10;&#10;    Добавлена команда /reminders для вывода ближайших событий.&#10;&#10;    Оптимизирована структура кода с использованием функций.&#10;&#10;Проблемы:&#10;&#10;    Требуется ручная настройка Google API.&#10;&#10;    Возможные задержки при первом запуске из-за авторизации.&#10;&#10;Рекомендации:&#10;&#10;    Автоматизировать обновление токена.&#10;&#10;    Добавить более гибкие фильтры и форматирование событий.&#10;&#10;    Рассмотреть возможность push-уведомлений по расписанию.">
+      <option name="closed" value="true" />
+      <created>1755016841664</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755016841664</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Создана директория для телеграм бота">
+      <option name="closed" value="true" />
+      <created>1755017944743</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755017944743</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Создана директория для анализа эссе&#10;&#10;Итог за день&#10;&#10;Достижения:&#10;&#10;    Проанализированы основные проблемы в текстовых данных для ML.&#10;&#10;    Описаны ключевые методы очистки и подготовки текста.&#10;&#10;    Написан пример кода для чистки и лемматизации русскоязычного текста.&#10;&#10;Проблемы:&#10;&#10;    Для качественной обработки необходимы мощные инструменты и ресурсы.&#10;&#10;    Ошибки в исходных текстах могут усложнять автоматическую обработку.&#10;&#10;Рекомендации:&#10;&#10;    Использовать комбинированные методы очистки.&#10;&#10;    Применять расширенные модели NLP для задач анализа эссе.&#10;&#10;    В будущем интегрировать автоматическую проверку орфографии и грамматики.">
+      <option name="closed" value="true" />
+      <created>1755017975135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755017975135</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Достижения:&#10;&#10;    Подготовлен и обучен классификатор RandomForest для текстовых данных.&#10;&#10;    Реализована очистка, лемматизация и векторизация текста.&#10;&#10;    Оценена точность модели на тестовой выборке.&#10;&#10;Проблемы:&#10;&#10;    Маленький объём данных — оценка модели недостаточно объективна. - исправлено&#10;&#10;    Для реальных задач нужен больший и сбалансированный датасет. - исправлено&#10;&#10;Рекомендации:&#10;&#10;    Собрать более крупный датасет для обучения. - готово&#10;&#10;    Попробовать другие модели (SVM, градиентный бустинг).&#10;&#10;    Внедрить кросс-валидацию для оценки стабильности.">
+      <option name="closed" value="true" />
+      <created>1755020496111</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755020496111</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Достижения:&#10;&#10;    Разработан простой сайт для анализа текстов с загрузкой и вводом.&#10;&#10;    Реализована очистка текста и вывод статистики.&#10;&#10;    Настроена базовая веб-инфраструктура на Flask.&#10;&#10;Проблемы:&#10;&#10;    Пока нет полноценного анализа ошибок в тексте, только базовые метрики.&#10;&#10;    Для масштабных данных нужна оптимизация.&#10;&#10;Рекомендации:&#10;&#10;    Добавить проверку грамматики/орфографии (например, через API).&#10;&#10;    Улучшить интерфейс, добавить подсветку ошибок.&#10;&#10;    В будущем интегрировать с ML-моделью оценки текстов.">
+      <option name="closed" value="true" />
+      <created>1755020913193</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755020913193</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Достижения:&#10;&#10;    Разработана концепция интерактивного ИИ-курса.&#10;&#10;    Описаны игровые механики для мотивации.&#10;&#10;    Предложена система уровней и баллов для адаптации и вовлечения.&#10;&#10;Рекомендации:&#10;&#10;    При реализации использовать фреймворки с поддержкой ИИ и базу данных для учёта прогресса.&#10;&#10;    Включить анализ поведения студентов для улучшения персонализации.">
+      <option name="closed" value="true" />
+      <created>1755020988772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755020988772</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Достижения:&#10;&#10;    Успешно интегрирована модель GPT-3.5.&#10;&#10;    Создана функция для получения ответов на вопросы студентов.&#10;&#10;    Проведено тестирование с примерами.&#10;&#10;Проблемы:&#10;&#10;    Для большого количества запросов необходим контроль использования API (лимиты, стоимость).&#10;&#10;    Ответы GPT могут требовать фильтрации и проверки.&#10;&#10;Рекомендации:&#10;&#10;    Внедрить кэширование часто задаваемых вопросов.&#10;&#10;    Добавить интерфейс для общения студентов с ИИ.&#10;&#10;    Обеспечить мониторинг и логирование запросов.">
+      <option name="closed" value="true" />
+      <created>1755022432670</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755022432670</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +300,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота." />
-    <option name="LAST_COMMIT_MESSAGE" value="Итог за день&#10;&#10;Достижения:&#10;&#10;    Создан базовый Telegram-бот, работающий на Python с библиотекой python-telegram-bot.&#10;&#10;    Бот отвечает на заранее заданные вопросы о расписании.&#10;&#10;    Бот обрабатывает команды и текстовые сообщения.&#10;&#10;Проблемы:&#10;&#10;    Ответы строго по ключевым фразам, без понимания смысловой нагрузки (будет улучшено на следующий день).&#10;&#10;    Пока нет обработки ошибок и логов.&#10;&#10;Рекомендации:&#10;&#10;    На следующий день добавить обработку естественного языка с NLTK для более гибкого распознавания вопросов.&#10;&#10;    Продумать расширение базы знаний бота." />
+    <MESSAGE value="Итог за день&#10;&#10;Достижения:&#10;&#10;    Интегрирован Google Calendar API в Telegram-бота.&#10;&#10;    Добавлена команда /reminders для вывода ближайших событий.&#10;&#10;    Оптимизирована структура кода с использованием функций.&#10;&#10;Проблемы:&#10;&#10;    Требуется ручная настройка Google API.&#10;&#10;    Возможные задержки при первом запуске из-за авторизации.&#10;&#10;Рекомендации:&#10;&#10;    Автоматизировать обновление токена.&#10;&#10;    Добавить более гибкие фильтры и форматирование событий.&#10;&#10;    Рассмотреть возможность push-уведомлений по расписанию." />
+    <MESSAGE value="Создана директория для телеграм бота" />
+    <MESSAGE value="Создана директория для анализа эссе&#10;&#10;Итог за день&#10;&#10;Достижения:&#10;&#10;    Проанализированы основные проблемы в текстовых данных для ML.&#10;&#10;    Описаны ключевые методы очистки и подготовки текста.&#10;&#10;    Написан пример кода для чистки и лемматизации русскоязычного текста.&#10;&#10;Проблемы:&#10;&#10;    Для качественной обработки необходимы мощные инструменты и ресурсы.&#10;&#10;    Ошибки в исходных текстах могут усложнять автоматическую обработку.&#10;&#10;Рекомендации:&#10;&#10;    Использовать комбинированные методы очистки.&#10;&#10;    Применять расширенные модели NLP для задач анализа эссе.&#10;&#10;    В будущем интегрировать автоматическую проверку орфографии и грамматики." />
+    <MESSAGE value="Достижения:&#10;&#10;    Подготовлен и обучен классификатор RandomForest для текстовых данных.&#10;&#10;    Реализована очистка, лемматизация и векторизация текста.&#10;&#10;    Оценена точность модели на тестовой выборке.&#10;&#10;Проблемы:&#10;&#10;    Маленький объём данных — оценка модели недостаточно объективна. - исправлено&#10;&#10;    Для реальных задач нужен больший и сбалансированный датасет. - исправлено&#10;&#10;Рекомендации:&#10;&#10;    Собрать более крупный датасет для обучения. - готово&#10;&#10;    Попробовать другие модели (SVM, градиентный бустинг).&#10;&#10;    Внедрить кросс-валидацию для оценки стабильности." />
+    <MESSAGE value="Достижения:&#10;&#10;    Разработан простой сайт для анализа текстов с загрузкой и вводом.&#10;&#10;    Реализована очистка текста и вывод статистики.&#10;&#10;    Настроена базовая веб-инфраструктура на Flask.&#10;&#10;Проблемы:&#10;&#10;    Пока нет полноценного анализа ошибок в тексте, только базовые метрики.&#10;&#10;    Для масштабных данных нужна оптимизация.&#10;&#10;Рекомендации:&#10;&#10;    Добавить проверку грамматики/орфографии (например, через API).&#10;&#10;    Улучшить интерфейс, добавить подсветку ошибок.&#10;&#10;    В будущем интегрировать с ML-моделью оценки текстов." />
+    <MESSAGE value="Достижения:&#10;&#10;    Разработана концепция интерактивного ИИ-курса.&#10;&#10;    Описаны игровые механики для мотивации.&#10;&#10;    Предложена система уровней и баллов для адаптации и вовлечения.&#10;&#10;Рекомендации:&#10;&#10;    При реализации использовать фреймворки с поддержкой ИИ и базу данных для учёта прогресса.&#10;&#10;    Включить анализ поведения студентов для улучшения персонализации." />
+    <MESSAGE value="Успешно интегрирована модель GPT-3.5.&#10;&#10;    Создана функция для получения ответов на вопросы студентов.&#10;&#10;    Проведено тестирование с примерами.&#10;&#10;Проблемы:&#10;&#10;    Для большого количества запросов необходим контроль использования API (лимиты, стоимость).&#10;&#10;    Ответы GPT могут требовать фильтрации и проверки.&#10;&#10;Рекомендации:&#10;&#10;    Внедрить кэширование часто задаваемых вопросов.&#10;&#10;    Добавить интерфейс для общения студентов с ИИ.&#10;&#10;    Обеспечить мониторинг и логирование запросов." />
+    <MESSAGE value="Успешно интегрирована модель GPT-3.5.&#10;&#10;    Создана функция для получения ответов на вопросы студентов.&#10;&#10;    Проведено тестирование с примерами.&#10;&#10;Проблемы:&#10;&#10;    Для большого количества запросов необходим контроль использования API (лимиты, стоимость).&#10;&#10;    Ответы GPT могут требовать фильтрации и проверки.&#10;&#10;Рекомендации:&#10;&#10;    Внедрить кэширование часто задаваемых вопросов.&#10;&#10;    Добавить интерфейс для общения студентов с ИИ.&#10;&#10;    Обеспечить мониторинг и логирование запросов." />
+    <MESSAGE value="&#10;    Разработана концепция интерактивного ИИ-курса.&#10;&#10;    Описаны игровые механики для мотивации.&#10;&#10;    Предложена система уровней и баллов для адаптации и вовлечения.&#10;&#10;Рекомендации:&#10;&#10;    При реализации использовать фреймворки с поддержкой ИИ и базу данных для учёта прогресса.&#10;&#10;    Включить анализ поведения студентов для улучшения персонализации." />
+    <MESSAGE value="Разработана концепция интерактивного ИИ-курса.&#10;&#10;    Описаны игровые механики для мотивации.&#10;&#10;    Предложена система уровней и баллов для адаптации и вовлечения.&#10;&#10;Рекомендации:&#10;&#10;    При реализации использовать фреймворки с поддержкой ИИ и базу данных для учёта прогресса.&#10;&#10;    Включить анализ поведения студентов для улучшения персонализации." />
+    <option name="LAST_COMMIT_MESSAGE" value="Разработана концепция интерактивного ИИ-курса.&#10;&#10;    Описаны игровые механики для мотивации.&#10;&#10;    Предложена система уровней и баллов для адаптации и вовлечения.&#10;&#10;Рекомендации:&#10;&#10;    При реализации использовать фреймворки с поддержкой ИИ и базу данных для учёта прогресса.&#10;&#10;    Включить анализ поведения студентов для улучшения персонализации." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EssayAnaliser/RandomForestLearnEssay.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
