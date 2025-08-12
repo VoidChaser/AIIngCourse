@@ -20,33 +20,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="31BvPPFptd09Ow6SzjymrPu7CvI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.AnaliserSite.executor": "Run",
-    "Python.RandomForestLearnEssay.executor": "Run",
-    "Python.aicourse.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.getmarksofdataset.executor": "Run",
-    "Python.gettok.executor": "Run",
-    "Python.quickstart.executor": "Run",
-    "Python.telegram_schedule_bot (1).executor": "Run",
-    "Python.telegram_schedule_bot.executor": "Run",
-    "Python.text_cleanup.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.AnaliserSite.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RandomForestLearnEssay.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aicourse.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.getmarksofdataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gettok.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quickstart.executor&quot;: &quot;Run&quot;,
+    &quot;Python.telegram_schedule_bot (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.telegram_schedule_bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\EssayAnaliser" />
