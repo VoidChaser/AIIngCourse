@@ -1,17 +1,19 @@
-version: '3.8'
+
 
 services:
   telegram-bot:
     build: ./Telebot
-    environment:
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    env_file:
+      - .env
+    volumes:
+      - ./Telebot/credentials.json:/app/credentials.json:ro
+      - ./Telebot/token.json:/app/token.json
     restart: always
 
   flask-app:
     build: ./Essay
     ports:
       - "5000:5000"
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    env_file:
+      - .env
     restart: always

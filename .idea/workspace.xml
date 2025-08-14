@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="    Интегрирована функция генерации вопросов на основе текста лекций.&#10;&#10;    Проведена базовая оценка качества сгенерированных вопросов.&#10;&#10;    Получен полезный инструмент для автоматизации создания материалов.&#10;&#10;Рекомендации:&#10;&#10;    Добавить параметр для выбора уровня сложности вопросов.&#10;&#10;    Внедрить фильтрацию и проверку релевантности.&#10;&#10;    Автоматизировать включение вопросов в интерактивный курс.">
+    <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/AnaliserSite.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/Markdown_Analise_scrore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/RandomForestLearnEssay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/moocs_stem_reviews.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/sitepreview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EssayAnaliser/text_cleanup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/telegram_schedule_bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Essay/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Essay/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Essay/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Essay/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Essay/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/creditionalsthree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/quickstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/quickstart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/token.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="10ae307cd2e001a19bd10561f69330f229b161ed" />
+        <entry key="$PROJECT_DIR$" value="2cabdfb0ef28139802624e45a73d9e5517d0f5a3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,44 +51,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.AnaliserSite.executor": "Run",
-    "Python.RandomForestLearnEssay.executor": "Run",
-    "Python.Testing.executor": "Run",
-    "Python.aicourse.executor": "Run",
-    "Python.aiquestionsgen.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.createdoc.executor": "Run",
-    "Python.getmarksofdataset.executor": "Run",
-    "Python.gettok.executor": "Run",
-    "Python.noaicourse.executor": "Run",
-    "Python.quickstart.executor": "Run",
-    "Python.telegram_schedule_bot (1).executor": "Run",
-    "Python.telegram_schedule_bot.executor": "Run",
-    "Python.text_cleanup.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/trofi/PycharmProjects/AI_Ingeneer_Course_Work/flask-app"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.AnaliserSite.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RandomForestLearnEssay.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aicourse.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aiquestionsgen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.createdoc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.getmarksofdataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gettok.executor&quot;: &quot;Run&quot;,
+    &quot;Python.noaicourse.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quickstart.executor&quot;: &quot;Run&quot;,
+    &quot;Python.telegram_schedule_bot (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.telegram_schedule_bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/trofi/PycharmProjects/AI_Ingeneer_Course_Work/Telebot&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\flask-app" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\telegram-bot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot" />
+      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot\app" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\telegram-bot" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\telegram-bot\app" />
       <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\EssayAnaliser" />
-      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work\Telebot" />
-      <recent name="C:\Users\trofi\PycharmProjects\AI_Ingeneer_Course_Work" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.aiquestionsgen">
+  <component name="RunManager" selected="Python.bot">
     <configuration name="Testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
@@ -107,28 +113,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aicourse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AI_Ingeneer_Course_Work" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InteractiveAICourse" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InteractiveAICourse/aicourse.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="aiquestionsgen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI_Ingeneer_Course_Work" />
       <option name="ENV_FILES" value="" />
@@ -143,6 +127,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InteractiveAICourse/aiquestionsgen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI_Ingeneer_Course_Work" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Telebot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Telebot/bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.aiquestionsgen" />
-        <item itemvalue="Python.createdoc" />
-        <item itemvalue="Python.noaicourse" />
+        <item itemvalue="Python.bot" />
         <item itemvalue="Python.Testing" />
-        <item itemvalue="Python.aicourse" />
+        <item itemvalue="Python.noaicourse" />
+        <item itemvalue="Python.createdoc" />
+        <item itemvalue="Python.aiquestionsgen" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +322,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755023005155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <option name="closed" value="true" />
+      <created>1755027743607</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1755027743607</updated>
+    </task>
+    <task id="LOCAL-00014" summary="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <option name="closed" value="true" />
+      <created>1755027795780</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1755027795780</updated>
+    </task>
+    <task id="LOCAL-00015" summary="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <option name="closed" value="true" />
+      <created>1755027824082</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1755027824082</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,7 +375,8 @@
     <MESSAGE value="Достижения:&#10;&#10;    Успешно интегрирована модель GPT-3.5.&#10;&#10;    Создана функция для получения ответов на вопросы студентов.&#10;&#10;    Проведено тестирование с примерами.&#10;&#10;Проблемы:&#10;&#10;    Для большого количества запросов необходим контроль использования API (лимиты, стоимость).&#10;&#10;    Ответы GPT могут требовать фильтрации и проверки.&#10;&#10;Рекомендации:&#10;&#10;    Внедрить кэширование часто задаваемых вопросов.&#10;&#10;    Добавить интерфейс для общения студентов с ИИ.&#10;&#10;    Обеспечить мониторинг и логирование запросов." />
     <MESSAGE value="Интерфейс в целом удобен, но требует доработки — сделать его проще и понятнее.&#10;&#10;Подсказки ИИ полезны, но иногда недостаточно информативны — стоит расширить базу знаний и контекст.&#10;&#10;Задания соответствуют уровню, но можно добавить больше практических примеров.&#10;&#10;Рекомендуется добавить функцию обратной связи прямо в интерфейс курса.&#10;&#10;Для повышения мотивации — ввести систему достижений и баллов (по плану)." />
     <MESSAGE value="    Интегрирована функция генерации вопросов на основе текста лекций.&#10;&#10;    Проведена базовая оценка качества сгенерированных вопросов.&#10;&#10;    Получен полезный инструмент для автоматизации создания материалов.&#10;&#10;Рекомендации:&#10;&#10;    Добавить параметр для выбора уровня сложности вопросов.&#10;&#10;    Внедрить фильтрацию и проверку релевантности.&#10;&#10;    Автоматизировать включение вопросов в интерактивный курс." />
-    <option name="LAST_COMMIT_MESSAGE" value="    Интегрирована функция генерации вопросов на основе текста лекций.&#10;&#10;    Проведена базовая оценка качества сгенерированных вопросов.&#10;&#10;    Получен полезный инструмент для автоматизации создания материалов.&#10;&#10;Рекомендации:&#10;&#10;    Добавить параметр для выбора уровня сложности вопросов.&#10;&#10;    Внедрить фильтрацию и проверку релевантности.&#10;&#10;    Автоматизировать включение вопросов в интерактивный курс." />
+    <MESSAGE value="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования." />
+    <option name="LAST_COMMIT_MESSAGE" value="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
