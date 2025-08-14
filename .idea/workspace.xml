@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa010bd6-e5e9-4203-99a8-0c8a0867dcdf" name="Changes" comment="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Essay/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Essay/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Essay/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Essay/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Essay/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/creditionalsthree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/quickstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/quickstart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telebot/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/Telebot/token.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telebot/token.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creditionalsthree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "VoidChaser"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/VoidChaser/AIIngCourse",
+    "accountId": "4137d637-4e6d-4d43-9849-c84a68f49d6e"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python313/Lib/encodings/cp1251.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/.venv/.gitignore" root0="SKIP_INSPECTION" />
@@ -346,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755027824082</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <option name="closed" value="true" />
+      <created>1755162831680</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1755162831680</updated>
+    </task>
+    <task id="LOCAL-00017" summary="    Подготовлены Dockerfile для основных компонентов.&#10;&#10;    Настроен docker-compose для удобного запуска всей системы.&#10;&#10;    Описан процесс развертывания и запуска.&#10;&#10;Рекомендации:&#10;&#10;    Добавить мониторинг и логирование в контейнеры.&#10;&#10;    Автоматизировать обновление образов.&#10;&#10;    Подумать об оркестрации (Kubernetes) для масштабирования.">
+      <option name="closed" value="true" />
+      <created>1755162951530</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1755162951530</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
